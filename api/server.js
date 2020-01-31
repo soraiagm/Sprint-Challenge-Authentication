@@ -20,7 +20,7 @@ server.use('/api/jokes', authenticate, jokesRouter);
 
 // server is working //
 server.get('/', (req, res) => {
-    res.send("It's working!");
+    res.status(200).json({ API: "It's working" });
   });
 
 module.exports = server;
