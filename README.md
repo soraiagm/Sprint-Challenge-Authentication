@@ -73,4 +73,5 @@ Build a front end to show the jokes.
 1. SERVER IS WORKING (server.js)
 2. REGISTER IS WORKING (auth-router.js)
 3. LOGIN IS WORKING (auth-router.js)
-4. 
+4. GET AUTHENTICATED USER IS WORKING (users-router.js)
+4. IMPLEMENTED JSON WEB TOKENS to persist authentication across requests

@@ -3,6 +3,7 @@ const router = require('express').Router();
 const Users = require('./model.js');
 const restricted = require('../auth/authenticate-middleware.js');
 
+// getting authenticated user is working //
 router.get('/', restricted, (req, res) => {
     Users.find()
       .then(users => {
