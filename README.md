@@ -16,19 +16,19 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [ X ] Create a forked copy of this project.
+- [ X ] Add your _Team Lead_ as collaborator on Github.
+- [ X ] Clone your forked version of the Repository.
+- [ X ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [ X ] Implement the project on this Branch, committing changes regularly.
+- [ X ] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` branch into `master` on your fork. **Please don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [ X ] Submit a Pull-Request to merge `firstName-lastName` branch into `master` on your fork. **Please don't make Pull Requests against Lambda's repository**.
+- [ X ] Please don't merge your own pull request.
+- [ X ] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [ X ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
@@ -38,21 +38,28 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is the purpose of using _sessions_?
+- [ X ] What is the purpose of using _sessions_?
+Sessions are a way to store user data in a unique session id so it can persist information between page requests. It's a remind to the server that the user is authorized.
 
-- [ ] What does bcrypt do to help us store passwords in a secure manner.
+- [ X ] What does bcrypt do to help us store passwords in a secure manner.
+It takes a password that is in plain text and translates it into a string that you can no longer reverse back into a password.
 
-- [ ] What does bcrypt do to slow down attackers?
+- [ X ] What does bcrypt do to slow down attackers?
+Bcrypt hashes passwords multiple times, the time indicated in the function, the higher the number, the longer it will take to prevent attacks.
 
-- [ ] What are the three parts of the JSON Web Token?
+- [ X ] What are the three parts of the JSON Web Token?
+A JWT is a string that has three parts separated by a period(.)
+1. The header
+2. The payload
+3. The signature
 
 ## Minimum Viable Product
 
 Implement an User Authentication System. Hash user's passwords before saving them to the database. Use `JSON Web Tokens` or `Sessions and Cookies` to persist authentication across requests.
 
-- [ ] Implement the `register` and `login` functionality inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
-- [ ] Implement the `authenticate` middleware inside `/auth/authenticate-middleware.js`.
-- [ ] Write a **minimum o 2 tests** per API endpoint. Write more tests if you have time.
+- [ X ] Implement the `register` and `login` functionality inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
+- [ X ] Implement the `authenticate` middleware inside `/auth/authenticate-middleware.js`.
+- [ X ] Write a **minimum o 2 tests** per API endpoint. Write more tests if you have time.
 
 **Note**: the database already has the users table, but if you run into issues, the migrations are available.
 
@@ -62,3 +69,9 @@ Build a front end to show the jokes.
 
 - [ ] Add a React client that connects to the API and has pages for `Sign Up`, `Sign In` and showing a list of `Jokes`.
 - [ ] Once you have the functionality down, style it!
+
+1. SERVER IS WORKING (server.js)
+2. REGISTER IS WORKING (auth-router.js)
+3. LOGIN IS WORKING (auth-router.js)
+4. GET AUTHENTICATED USER IS WORKING (users-router.js)
+4. IMPLEMENTED JSON WEB TOKENS to persist authentication across requests
